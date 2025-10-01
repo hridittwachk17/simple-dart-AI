@@ -31,7 +31,7 @@ String generateReply(String input) {
     "bye": "See you later! Keep coding!"
   };
 
-  // Check if input matches a known key
+
   for (var key in responses.keys) {
     if (input.contains(key)) {
       return responses[key]!;
@@ -41,3 +41,4 @@ String generateReply(String input) {
   // Default reply if nothing matches
   return "Interesting... tell me more!";
 }
+
