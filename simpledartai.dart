@@ -1,12 +1,12 @@
 import 'dart:io';
 
-/// A mini interactive Dart assistant
+
 void main() {
   print("🤖 Welcome to DartAI Assistant!");
   print("Type 'exit' to quit.\n");
 
   while (true) {
-    stdout.write("You: ");                 // Prompt user
+    stdout.write("You: ");                 
     String? userInput = stdin.readLineSync();
 
     if (userInput == null || userInput.toLowerCase() == "exit") {
@@ -14,12 +14,12 @@ void main() {
       break;
     }
 
-    String reply = generateReply(userInput); // Function returns a value
+    String reply = generateReply(userInput); 
     print("DartAI: $reply\n");
   }
 }
 
-/// Function to generate a reply based on input
+
 String generateReply(String input) {
   input = input.toLowerCase();
 
