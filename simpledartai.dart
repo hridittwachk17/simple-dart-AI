@@ -38,7 +38,7 @@ String generateReply(String input) {
     }
   }
 
-  // Default reply if nothing matches
+  
   return "Interesting... tell me more!";
 }
 
